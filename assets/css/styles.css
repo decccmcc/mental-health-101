@@ -1,0 +1,24 @@
+/* Global styles */
+
+
+
+/* nav */
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#logo {
+    margin-left: 1px;
+
+}
+#title {
+    font-size: ;
+    color: #636060;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+    font-weight: 500;
+    color: #6d6c6c;
+    
+}
