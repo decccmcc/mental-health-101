@@ -12,7 +12,7 @@
 
 }
 #title {
-    font-size: ;
+    font-size: 1.2rem;
     color: #636060;
 }
 
@@ -21,4 +21,9 @@
     font-weight: 500;
     color: #6d6c6c;
     
+}
+
+/* Header */
+#hero {
+    background: url('../images/hero.png') repeat center center/cover;
 }
