@@ -38,3 +38,11 @@ body {
 section {
     background-color: rgb(205, 217, 223);
 }
+
+.card img {
+    width: 100px;
+    margin: 0.75rem auto;  
+} 
+
+
+/* Footer */
