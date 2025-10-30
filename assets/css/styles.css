@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@300;400;500;700&family=Quicksand:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: #8ec7ed;
+    --primary-color: #6ec1f8;
     --secondary-color: #d9f0ff;
     --background-color: #e0e2e6;
     --text-color: #5a5656;
@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5 {
     margin-right: 15px;
     font-weight: 500;
     color: #6d6c6c;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
     
 }
 
@@ -87,7 +93,20 @@ section {
     margin-top: 30px;
 }
 
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    
+}
 
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: black;
+    
+}
+
+/* Cards */
 .card-text {
     font-size: 0.85rem;
 }
