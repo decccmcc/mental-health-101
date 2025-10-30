@@ -121,7 +121,15 @@ section {
 }
 
 /* Footer */
+footer {
+    min-height: 50px
+}
 
+
+.social-links i {
+    color: var(--secondary-color);
+    margin-right: 15px;
+}
 
 /* Media Queries */
 
