@@ -43,6 +43,10 @@ section {
     width: 100px;
     margin: 0.75rem auto;  
 } 
-
+.card a {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
 
 /* Footer */
