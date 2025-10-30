@@ -39,6 +39,12 @@ section {
     background-color: rgb(205, 217, 223);
 }
 
+.info-title {
+    margin-top: 15px
+}
+
+
+
 .card img {
     width: 100px;
     margin: 0.75rem auto;  
@@ -50,3 +56,29 @@ section {
 }
 
 /* Footer */
+
+
+/* Media Queries */
+
+/* Large Screens */
+@media screen and (max-width: 992px) {
+    .info-title {
+        font-size: 2rem;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Medium Screens */
+@media screen and (max-width: 768px) {
+    .info-title {
+        font-size: 1.5rem;
+    }
+    
+}
