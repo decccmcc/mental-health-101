@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Work+Sans:wght@300;400;500;700&family=Quicksand:wght@300;400;500;700&display=swap');
 
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #50e3c2;
+    --primary-color: #8ec7ed;
+    --secondary-color: #d9f0ff;
     --background-color: #e0e2e6;
     --text-color: #5a5656;
 }
 
 /* Global styles */
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: var(--text-color);
 }
 html, body {
@@ -18,7 +18,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 /* nav */
 
@@ -84,7 +84,7 @@ section {
 
 /* Media Queries */
 
-/* Large Screens */
+/* Large Screens and up */
 @media screen and (min-width: 992px) {
 
     #hero {
@@ -101,12 +101,9 @@ section {
     
 }
 
-/* Medium Screens */
+/* Medium Screens and up */
 @media screen and (min-width: 768px) {
-    .info-title {
-        font-size: 1.5rem;
-    }
-    
+
     .card-text {
         font-size: 0.9rem;
     }
