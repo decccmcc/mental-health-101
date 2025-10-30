@@ -18,7 +18,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img id="logo" src="assets/images/logo.png" alt="Logo" width="50" height="50">
@@ -75,7 +75,7 @@
                 <div class="row justify-content-between gx-4 gx-lg-5">
                     <div class="col-md-6 text-md-center info">
                         <div class="info-content">
-                            <h2 class="mb-4 info-title">Understanding Mental Health</h2>
+                            <h2 class="mb-4 info-title mt-5">Understanding Mental Health</h2>
                             <p>Mental health encompasses our emotional, psychological, and social well-being. It affects
                                 how we think,
                                 feel, and act. Good mental health is crucial at every stage of life, from childhood to
@@ -158,7 +158,7 @@
         <section id="tips-resources" class="container-fluid py-5">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h5 class="mb-4 display-6">Tips</h5>
+                    <h5 class="mb-4 mt-5 display-6">Tips</h5>
                     <p><strong>Here are some practical tips to help you maintain good mental health:</strong></p>
                     <ul class="text-center list-unstyled">
                         <li>Stay connected with friends and family.</li>
@@ -270,6 +270,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
